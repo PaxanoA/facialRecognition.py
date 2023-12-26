@@ -2,15 +2,15 @@ import cv2
 import os
 import imutils
 
-personName = "Andres"
-dataPath = "C:/Users/titip/PycharmProjects/openCvpython/Data"
+personName = "" #insert down the name of the person
+dataPath = "" #insert down the path of the data
 personPath = dataPath + "/" + personName
 
 if not os.path.exists(personPath):
-    print("Carpeta creada")
+    print("Folder Created")
     os.makedirs(personPath)
 
-cap = cv2.VideoCapture('Resources/Video Proyecto de Grado.mp4')
+cap = cv2.VideoCapture('') #path to the video to take the screenshots of the face. 
 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 count = 0
